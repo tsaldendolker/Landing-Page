@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VocalVibes - Music Collaborations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #0a0a0a; 
+            color: white; 
+            overflow-x: hidden;
+        }
+        .hero { 
+            background: linear-gradient(rgba(10, 10, 50, 0.7), rgba(10, 10, 100, 0.8)), url('placeholder.jpg') no-repeat center center/cover; 
+            color: white; 
+            padding: 120px 20px; 
+            text-align: center; 
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero h1 { font-size: 3rem; text-transform: uppercase; text-shadow: 2px 2px 10px #00f; }
+        .hero p { font-size: 1.2rem; text-shadow: 1px 1px 8px #00f; }
+        
+        .features, .testimonials, .contact { padding: 50px 20px; }
+        .feature-card, .testimonial-card { 
+            background: rgba(255, 255, 255, 0.1); 
+            border: none; 
+            color: white; 
+            transition: transform 0.3s ease-in-out; 
+            text-align: center;
+        }
+        .feature-card:hover, .testimonial-card:hover { transform: scale(1.05); }
+        .feature-card { animation: slideIn 1s ease-in-out; }
+        .testimonial-card { animation: slideUp 1s ease-in-out; }
+        
+        .contact { background: #141414; }
+        footer { background: #000; color: white; text-align: center; padding: 20px; }
+        .social-icons a { color: #00f; margin: 0 10px; font-size: 1.5rem; transition: 0.3s; }
+        .social-icons a:hover { color: #ff0; }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .btn-primary { transition: 0.3s ease-in-out; }
+        .btn-primary:hover { box-shadow: 0px 0px 15px #00f; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">VocalVibes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <h1>VocalVibes</h1>
+        <p>Where voices unite and music comes to life.</p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+    </section>
+    
+    <section id="features" class="features text-center">
+        <div class="container">
+            <h2>Our Features</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card feature-card p-3 shadow-sm">
+                        <h4>Music Collaborations</h4>
+                        <p>Work with top artists & create magic.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-3 shadow-sm">
+                        <h4>Live Performances</h4>
+                        <p>Experience high-quality musical events.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card feature-card p-3 shadow-sm">
+                        <h4>Vocal Coaching</h4>
+                        <p>Enhance your skills with expert guidance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="testimonials text-center">
+        <div class="container">
+            <h2>What People Say</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card testimonial-card p-3 shadow-sm">
+                        <p>"VocalVibes changed my music career!"</p>
+                        <h5>- Alex</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card p-3 shadow-sm">
+                        <p>"An amazing platform for collaborations!"</p>
+                        <h5>- Sarah</h5>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card testimonial-card p-3 shadow-sm">
+                        <p>"Their vocal coaching is top-notch!"</p>
+                        <h5>- Michael</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 VocalVibes. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
